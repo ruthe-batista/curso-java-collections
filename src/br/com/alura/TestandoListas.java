@@ -1,3 +1,5 @@
+package br.com.alura;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -6,7 +8,7 @@ public class TestandoListas {
     public static void main(String[] args) {
 
         String aula1 = "Conhecendo mais listas";
-        String aula2 = "Modelando a classe Aula";
+        String aula2 = "Modelando a classe br.com.alura.Aula";
         String aula3 = "Trabalhando com Cursos e Sets";
 
         ArrayList<String> aulas = new ArrayList<>();
@@ -21,7 +23,7 @@ public class TestandoListas {
         System.out.println(aulas);
 
         for (String aula : aulas) {
-            System.out.println("Aula: " + aula);
+            System.out.println("br.com.alura.Aula: " + aula);
         }
 
         String primeiraAula = aulas.get(0);
@@ -35,7 +37,7 @@ public class TestandoListas {
 
         aulas.forEach(aula -> {
             System.out.println("pecorrendo:");
-            System.out.println("Aula " + aula);
+            System.out.println("br.com.alura.Aula " + aula);
         });
 
         aulas.add("Aumentando nosso conhecimento");
