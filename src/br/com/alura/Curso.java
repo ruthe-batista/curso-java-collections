@@ -40,12 +40,17 @@ public class Curso {
         return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + "," + "aulas: " + this.aulas + "]";
     }
 
-    public void matricula(Aluno aluno){
+    public void matricula(Aluno aluno) {
         this.alunos.add(aluno);
     }
 
-    public Set<Aluno> getAlunos(){
+    public Set<Aluno> getAlunos() {
         return Collections.unmodifiableSet(alunos);
     }
+
+    public boolean estaMatricuado(Aluno aluno) {
+        return this.alunos.contains(aluno);
+    }
+
 }
 

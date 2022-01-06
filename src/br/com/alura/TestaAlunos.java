@@ -21,11 +21,11 @@ public class TestaAlunos {
 
         System.out.println(alunos.size());
 
-        for (String aluno: alunos) {
+        for (String aluno : alunos) {
             System.out.println(aluno);
         }
 
-        alunos.forEach(aluno ->{
+        alunos.forEach(aluno -> {
             System.out.println(alunos);
         });
 
