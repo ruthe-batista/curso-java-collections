@@ -5,7 +5,7 @@ public class Aula implements Comparable<Aula> {
     private String titulo;
     private Integer tempo;
 
-    public  Aula(String titulo, Integer tempo){
+    public Aula(String titulo, Integer tempo) {
         this.titulo = titulo;
         this.tempo = tempo;
     }
@@ -19,12 +19,12 @@ public class Aula implements Comparable<Aula> {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "[Aula: " + this.titulo + "," + this.tempo + "minutos]";
     }
 
     @Override
-    public int compareTo(Aula outraAula){
+    public int compareTo(Aula outraAula) {
         return this.titulo.compareTo(outraAula.titulo);
     }
 }
