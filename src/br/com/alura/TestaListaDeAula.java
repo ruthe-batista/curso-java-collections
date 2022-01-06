@@ -29,6 +29,5 @@ public class TestaListaDeAula {
 
         aulas.sort(Comparator.comparing(Aula::getTempo));
 
-
     }
 }
